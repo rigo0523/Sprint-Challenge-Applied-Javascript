@@ -7,16 +7,28 @@
 //
 // Write a function that returns the following markup:
 //
-// <div class="card">
+// <div class="card"> 
 //   <div class="headline">{Headline of article}</div>
 //   <div class="author">
-//     <div class="img-container">
-//       <img src={url of authors image} />
-//     </div>
-//     <span>By {author's name}</span>
+    //     <div class="img-container">
+    //              <img src={url of authors image} />
+    //     </div>
+    //     <span>By {author's name}</span>
 //   </div>
 // </div>
 //
 // Use your function to create a card for each of the articles and add the card to the DOM.
 
+const container = document.querySelector(".cards-container")
+console.log(container)
+
+function articleCards(data) {
+    const card = document.createElement('div');
+    const headline = document.createElement('div');
+    const author = document.createElement()
+}
+
+
+
 axios
+    .get("https://lambda-times-backend.herokuapp.com/articles")
